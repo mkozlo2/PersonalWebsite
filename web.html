@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maja Kozlowska - Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Maja Kozlowska</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="openTab('about')">About</a></li>
+                <li><a href="#projects" onclick="openTab('projects')">Projects</a></li>
+                <li><a href="#experience" onclick="openTab('experience')">Experience</a></li>
+                <li><a href="#contact" onclick="openTab('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="section tab-content active">
+        <div class="about-container">
+            <img src="/profile-pic-maja.png" alt="Your Photo" class="profile-pic">
+            <div class="about-details">
+                <h2>Maja Kozlowska</h2>
+                <p>At Michigan Technological University, the focus on innovative computer engineering principles has honed my skills in REST APIs and Git, preparing me for real-world applications. As an intern C# Developer at Xopero Software, I've employed these competencies to contribute to robust software solutions, enhancing my practical knowledge and reinforcing my dedication to the tech industry.
+                <div class="contacts">
+                    <!-- Email -->
+                    <!-- <a href="mailto:mkozlo2@mtu.edu">
+                        <img src="/email.png" alt="Email" class="contact-icon1">
+                    </a> -->
+                    <!-- GitHub -->
+                    <a href="https://github.com/nemi232" target="_blank">
+                        <img src="/github.png" alt="GitHub" class="contact-icon">
+                    </a>
+                    <!-- LinkedIn -->
+                    <a href="https://linkedin.com/in/maja-kozlowska-3b64731a1" target="_blank">
+                        <img src="/linkedin.png" alt="LinkedIn" class="contact-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section tab-content">
+        <h2>Personal Projects</h2>
+        <div class="project-grid">
+        
+                <a href="https://github.com/nemi232/BackupApp" target="_blank" class="project-pod">
+                    <h3>Git Backup App</h3>
+                    <p>An application that automates and secures backup and restoration of GitHub repository issues, ensuring data integrity and security throughout the process.</p>
+                    <p><strong>Technologies:</strong> C#, GitHub API</p>
+                </a>
+            
+                <a href="https://github.com/nemi232/Personal-Finance-Manager" target="_blank" class="project-pod">
+                    <h3>Personal Finance Manager</h3>
+                    <p> Application used for tracking and managing personal finances, allowing users to calculate income, expenses, and net balance in real time.</p>
+                    <p><strong>Technologies:</strong> C#, ASP.NET, Kubernetes, Docker</p>
+                </a>
+        </div>
+        <div class="project-grid">
+                <a href="https://github.com/nemi232/Task-Manager" target="_blank" class="project-pod">
+                    <h3>Task Manager</h3>
+                    <p>The Task Management Web Application is a full-featured web-based tool designed to help users manage their tasks efficiently.</p>
+                    <p><strong>Technologies:</strong> C#, ASP.NET Core</p>
+                </a>
+                <a href="https://github.com/nemi232/OnlineLearningPlatform" target="_blank" class="project-pod">
+                    <h3>Online Learning Platform</h3>
+                    <p>An ASP.NET Core Web API project for managing courses, students, and lessons.</p>
+                    <p><strong>Technologies:</strong> C#, ASP.NET Core, SQL</p>
+                </a>
+        </div>
+    </section>
+
+    <section id="experience" class="section tab-content">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Xopero Software</h3>
+            <p>• Contributed to the development and maintenance of a software solution utilized by over 1500 customers worldwide.
+                </p>
+            <p>
+            • Managed and optimized SQLite databases for application efficiency.
+            </p>
+            <p>
+                • Worked extensively with various Git APIs, including Bitbucket, GitLab, Azure DevOps, GitHub, and Jira, for version control and project management.
+            </p>
+            <p>
+                • Collaborated closely with the frontend team to ensure seamless integration and alignment between backend and frontend components.
+            </p>
+            <p><strong>Duration:</strong> June 2023 - August 2023</p>
+        </div>
+    </section>
+    <section id="contact" class="section tab-content">
+        <h2>Contact Me</h2>
+        <p>If you'd like to reach out, feel free to use the form below or connect with me on LinkedIn or GitHub!</p>
+        <div class="contact-form-container">
+            <form action="https://formspree.io/f/your-form-id" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+    
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    
+        <div class="social-links">
+            <a href="mailto:mkozlo2@mtu.edu">
+                <img src="/email.png" alt="Email" class="contact-icon">
+            </a>
+            <a href="https://github.com/nemi232" target="_blank">
+                <img src="/github.png" alt="GitHub" class="contact-icon">
+            </a>
+            <a href="https://linkedin.com/in/maja-kozlowska-3b64731a1" target="_blank">
+                <img src="/linkedin.png" alt="LinkedIn" class="contact-icon">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Maja Kozlowska</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
